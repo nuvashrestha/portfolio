@@ -1,0 +1,251 @@
+:root {
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --blue: #74b9ff;
+    --gray: #8395a7;
+    --dark-gray: #2d3436;
+    --dark: #1e272e;
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --dark-slate: #495670;
+    --light-slate: #a8b2d1;
+    --cyan: #00d2d3;
+    --font-mono: "Ubuntu Mono";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Gotham Black', sans-serif;;
+    background-color: #DDD0C8;
+}
+
+.logo {
+    font-family: 'Gotham Black', sans-serif;
+    font-weight: 700;
+    color: #de5499;
+    font-size: 20px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list-item {
+    margin-right: 15px;
+}
+
+
+.header-list-item a { 
+    color: #de5499;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Gotham Black', sans-serif;;
+}
+
+.header-list-item a span {
+    color: #323232;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+/*hello my name is*/
+.header-intro {
+    color: #323232;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Gotham Black', sans-serif;;
+    margin-bottom: 10px;
+}
+/*Nuva Shrestha*/
+.header-title {
+    color: #de5499;
+    font-size: 95px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.header-button {
+    /* Display block - DON'T BE IN-LINE WITH ANYONE */
+    display: block;
+    /* CENTER THE TEXT WITHIN THE ITEM */
+    text-align: center;
+    width: 150px;
+    /* INTERNAL PUSH (TOP & BOTTOM)*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* CURVES OUR EDGES */
+    border-radius: 3px;
+    color: #323232;
+    border: 3px solid #de5499;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.header-button:hover{
+    background: #de5499;
+    opacity: 1;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    padding: 50px;
+
+}
+
+.header-text {
+    width: 50%;
+    color: #323232;
+    font-size: 20px;
+    font-family: 'Gotham Black', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.section {
+    padding: 80px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-image img {
+    width: 400px;
+    height: 450px;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.section-title {
+    font-size: 50px;
+    color: #de5499;
+}
+
+.about-list {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.about-text {
+    color: #323232;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    font-family: 'Gotham Black', sans-serif;;
+    font-size: 20px;
+}
+
+.about-list__item span {
+    color: #323232;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.about-list__item i {
+    color: #de5499;
+}
+
+.section-title span {
+    color: #323232;
+    font-family: 'Gotham Black', sans-serif;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.work-card {
+    width: 26%;
+    display: block;
+    margin: 30px;
+    transition: .3s;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.work-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-link a {
+    color: #de5499;
+    font-size: 20px;
+}
+
+.work-card_title {
+    color: #de5499;
+    font-size: 30px;
+}
+
+.work-card_text {
+    color: #323232;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Gotham Black', sans-serif;
+    font-size: 20px;
+}
+
+.work-card_skill {
+    color: #323232;
+    border: 1px solid #de5499;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'Gotham Black', sans-serif;
+}
+
+.work-card:hover {
+    background: #e7ddd8  ;
+    opacity: 1;
+}
+
+.footer {
+    height: 3vh;
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list__item {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.footer-list__item a {
+    color: #DDD0C8;
+}
