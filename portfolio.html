@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Bebas+Neue&family=Ubuntu+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./potfolio_style.css">
     <script src="./script.js"></script>
 
 </head>
@@ -30,14 +30,16 @@
                 Shrestha
             </div>
             <ul class="header-list">
+                <button id="darkModeToggle">🌙</button>
+
                 <li class="header-list-item">
                     <a href="#about"> <span>01.</span> About </a>
                 </li>
                 <li class="header-list-item">
-                    <a href="#work"> <span>02.</span> Work </a>
+                    <a href="#project"> <span>02.</span> Projects </a>
                 </li>
                 <li class="header-list-item">
-                    <a href="#footer"> <span>03.</span> Contacts </a>
+                    <a href="#footer"> <span>03.</span> Contact </a>
                 </li>
             </ul>
         </div>
@@ -45,22 +47,19 @@
 
         <div class="header-content">
             <p class="header-intro"> Hi my name is, </p>
-            <h1 class="header-title"> Nuva Shrestha </h1>
+            <h1 class="header-title" id="typing-text"></h1>
             <p class="header-text">
-                I'm a computer science student with a passion for software development. Currently pursuing a degree in
-                Computer Science at University of South Florida, I'm seeking a Software Engineering internship to apply
-                my tech skills and gain practical experience.
-                Aside from school, in my free time I love to paint, watch thriller/ suspense movies, and hangout with
-                friends. Thank you for visiting my portfolio website, and
-                I look forward to connecting with like-minded individuals and organizations in the tech industry.
+                I'm a Computer Science student at the University of South Florida with a strong passion for software
+                development. I'm currently seeking a full-time Software Development role where I can apply my technical
+                skills and gain hands-on experience.
+                Beyond academics, I enjoy painting, watching thriller and suspense movies, and spending time with
+                friends. Thank you for visiting my portfolio website—I look forward to connecting with like-minded
+                individuals and organizations in the tech industry!
             </p>
             <a href="mailto:nuva@usf.edu" class="header-button">Contact me</a>
 
         </div>
     </header>
-
-
-
 
     <!------ About section--->
     <section class="section about" id="about">
@@ -68,7 +67,7 @@
             <h3 class="section-title"> <span>01. </span>About </h3>
             <p class="about-text"> As a student, I have developed a solid understanding of fundamental computer science
                 concepts, enabling me to tackle complex problems and develop efficient solutions.
-                Through my coursework and personal projects, I have gained hands-on experience in building web
+                Through my course project and personal projects, I have gained hands-on experience in building web
                 applications, implementing data structures and algorithms,
                 and collaborating with team members to deliver high-quality software solutions. My technical skills
                 include the following: </p>
@@ -92,25 +91,16 @@
                     <i class="bi bi-caret-right-fill"></i>
                     <span>Python</span>
                 </li>
-                <li class="about-list__item">
-                    <i class="bi bi-caret-right-fill"></i>
-                    <span>Bootstrap</span>
-                </li>
             </ul>
 
             <ul class="about-list">
                 <li class="about-list__item">
                     <i class="bi bi-caret-right-fill"></i>
-                    <span>C</span>
-                </li>
-
-                <li class="about-list__item">
-                    <i class="bi bi-caret-right-fill"></i>
-                    <span>C++</span>
+                    <span>React</span>
                 </li>
                 <li class="about-list__item">
                     <i class="bi bi-caret-right-fill"></i>
-                    <span>RISC-V</span>
+                    <span>C/C++</span>
                 </li>
                 <li class="about-list__item">
                     <i class="bi bi-caret-right-fill"></i>
@@ -118,54 +108,57 @@
                 </li>
                 <li class="about-list__item">
                     <i class="bi bi-caret-right-fill"></i>
-                    <span>Github</span>
+                    <span>PostgreSQL</span>
                 </li>
             </ul>
-            <p class="about-text">In addition to my technical skills, I possess strong communication and teamwork
+            <p class="about-text">In addition to my technical skills, I possess strong communication and team project
                 abilities.
                 I thrive in collaborative environments and value open and constructive dialogue to drive innovation and
                 achieve collective goals.
-                I am committed to continuously learning, growing, and adapting to new technologies and frameworks.
+                I am committed to continuously learning, growing, and adapting to new technologies and frame projects.
             </p>
         </div>
 
         <div class="about-image">
-            <img src="./IMG_5336.jpg" alt="Sorry this picture is not loading.">
+            <img src="./NuvaPicture.jpg" alt="Sorry this picture is not loading.">
         </div>
     </section>
-    <!--Work Section-->
-    <section class="section work" id="work">
-        <h2 class="section-title"><span>02. </span> Work</h2>
+
+    <!--Project Section-->
+    <section class="section project" id="project">
+        <h2 class="section-title"><span>02. </span> Projects </h2>
         <div class="container">
-            <div class="work-card">
-                <div class="work-link">
-                    <a href=" https://github.com/nuvashrestha/website">
+            <div class="project-card">
+                <div class="project-link">
+                    <a href="https://github.com/nuvashrestha/website">
                         <i class="bi bi-folder2"></i>
                     </a>
                     <a href="#!">
                         <i class="bi bi-box-arrow-up-right"></i>
                     </a>
                 </div>
-                <h4 class="work-card_title">Portfolio Website</h4>
+                <h4 class="project-card_title">Portfolio Website</h4>
                 <div>
-                    <p class="work-card_text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus non fugit illum ab
-                        labore consequatur omnis architecto veniam aperiam eligendi animi rem voluptatum, repellendus
-                        soluta, explicabo id dolorum ducimus? Tempora!
+                    <p class="project-card_text">
+                        Developed and maintained a personal portfolio website to showcase my projects, skills, and
+                        accomplishments. The website serves as an online portfolio, providing a professional and
+                        interactive platform for potential employers and collaborators to explore my project in the
+                        field
+                        of computer science and web development.
                     </p>
                 </div>
                 <div>
-                    <span class="work-card_skill">
+                    <span class="project-card_skill">
                         HTML
                     </span>
-                    <span class="work-card_skill">
+                    <span class="project-card_skill">
                         CSS
                     </span>
 
                 </div>
             </div>
-            <div class="work-card">
-                <div class="work-link">
+            <div class="project-card">
+                <div class="project-link">
                     <a href="#!">
                         <i class="bi bi-folder2"></i>
                     </a>
@@ -173,69 +166,77 @@
                         <i class="bi bi-box-arrow-up-right"></i>
                     </a>
                 </div>
-                <h4 class="work-card_title">Space Invaders Game</h4>
+                <h4 class="project-card_title">Stock Analysis Application</h4>
                 <div>
-                    <p class="work-card_text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus non fugit illum ab
-                        labore consequatur omnis architecto veniam aperiam eligendi animi rem voluptatum, repellendus
-                        soluta, explicabo id dolorum ducimus? Tempora!
+                    <p class="project-card_text">
+                        Implemented databinding for seamless integration of CSV stock data, supporting daily, weekly,
+                        and monthly views,
+                        and ensuring accurate display without gaps for non-trading days.
                     </p>
                 </div>
                 <div>
-                    <span class="work-card_skill">
+                    <span class="project-card_skill">
+                        C#
+                    </span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-link">
+                    <a href="#!">
+                        <i class="bi bi-folder2"></i>
+                    </a>
+                    <a href="#!">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </div>
+                <h4 class="project-card_title">Academic Management System</h4>
+                <div>
+                    <p class="project-card_text">
+                        Implemented a secure software solution for managing student, instructor, and course data,
+                        including enrollment,
+                        grading, and departmental information. Built functionalities for generating detailed reports,
+                        conducting What-If analyses, and tracking academic
+                        performance metrics, such as GPA trends and departmental rankings.
+                    </p>
+                </div>
+                <div>
+                    <span class="project-card_skill">
+                        Django
+                    </span>
+                    <span class="project-card_skill">
+                        React
+                    </span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-link">
+                    <a href="#!">
+                        <i class="bi bi-folder2"></i>
+                    </a>
+                    <a href="#!">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </div>
+                <h4 class="project-card_title">Snake Game</h4>
+                <div>
+                    <p class="project-card_text">
+                        Developed a Snake game in Python, incorporating responsive controls for precise player input,
+                        score tracking to
+                        monitor player progress, and essential UI elements to create a complete and immersive gaming
+                        experience. Optimized game performance by refining real-time controls and collision detection
+                        algorithms, providing a smooth
+                        and engaging player experience while effectively addressing potential performance issues.
+                    </p>
+                </div>
+                <div>
+                    <span class="project-card_skill">
                         Python
                     </span>
                 </div>
             </div>
-            <div class="work-card">
-                <div class="work-link">
-                    <a href="#!">
-                        <i class="bi bi-folder2"></i>
-                    </a>
-                    <a href="#!">
-                        <i class="bi bi-box-arrow-up-right"></i>
-                    </a>
-                </div>
-                <h4 class="work-card_title">Sudoko Solver</h4>
-                <div>
-                    <p class="work-card_text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus non fugit illum ab
-                        labore consequatur omnis architecto veniam aperiam eligendi animi rem voluptatum, repellendus
-                        soluta, explicabo id dolorum ducimus? Tempora!
-                    </p>
-                </div>
-                <div>
-                    <span class="work-card_skill">
-                        C
-                    </span>
-                </div>
-            </div>
-            <div class="work-card">
-                <div class="work-link">
-                    <a href="#!">
-                        <i class="bi bi-folder2"></i>
-                    </a>
-                    <a href="#!">
-                        <i class="bi bi-box-arrow-up-right"></i>
-                    </a>
-                </div>
-                <h4 class="work-card_title">Password Generator</h4>
-                <div>
-                    <p class="work-card_text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus non fugit illum ab
-                        labore consequatur omnis architecto veniam aperiam eligendi animi rem voluptatum, repellendus
-                        soluta, explicabo id dolorum ducimus? Tempora!
-                    </p>
-                </div>
-                <div>
-                    <span class="work-card_skill">
-                        C
-                    </span>
 
-                </div>
-            </div>
-            <div class="work-card">
-                <div class="work-link">
+            <div class="project-card">
+                <div class="project-link">
                     <a href="#!">
                         <i class="bi bi-folder2"></i>
                     </a>
@@ -243,67 +244,77 @@
                         <i class="bi bi-box-arrow-up-right"></i>
                     </a>
                 </div>
-                <h4 class="work-card_title">Movie Recommendation System</h4>
+                <h4 class="project-card_title">Cat Cafe Website</h4>
                 <div>
-                    <p class="work-card_text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus non fugit illum ab
-                        labore consequatur omnis architecto veniam aperiam eligendi animi rem voluptatum, repellendus
-                        soluta, explicabo id dolorum ducimus? Tempora!
+                    <p class="project-card_text">
+                        Developed a fully responsive website using HTML, CSS, and JavaScript, creating an engaging,
+                        user-friendly
+                        experience with interactive features such as reservations and account management. Integrated PHP
+                        with PostgreSQL to handle reservations and user accounts, optimizing database queries for
+                        efficient
+                        data retrieval, secure authentication, and seamless user interactions.
                     </p>
                 </div>
                 <div>
-                    <span class="work-card_skill">
-                        Python
-                    </span>
-                </div>
-            </div>
-            <div class="work-card">
-                <div class="work-link">
-                    <a href="#!">
-                        <i class="bi bi-folder2"></i>
-                    </a>
-                    <a href="#!">
-                        <i class="bi bi-box-arrow-up-right"></i>
-                    </a>
-                </div>
-                <h4 class="work-card_title">Memory Game</h4>
-                <div>
-                    <p class="work-card_text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus non fugit illum ab
-                        labore consequatur omnis architecto veniam aperiam eligendi animi rem voluptatum, repellendus
-                        soluta, explicabo id dolorum ducimus? Tempora!
-                    </p>
-                </div>
-                <div>
-                    <span class="work-card_skill">
+                    <span class="project-card_skill">
                         HTML
                     </span>
-                    <span class="work-card_skill">
+                    <span class="project-card_skill">
                         CSS
                     </span>
-                    <span class="work-card_skill">
-                        JavaScript
+                    <span class="project-card_skill">
+                        PHP
+                    </span>
+                    <span class="project-card_skill">
+                        PostgreSQL
+                    </span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-link">
+                    <a href="#!">
+                        <i class="bi bi-folder2"></i>
+                    </a>
+                    <a href="#!">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </div>
+                <h4 class="project-card_title">Activism Website</h4>
+                <div>
+                    <p class="project-card_text">
+                        Designed and developed an engaging and informative 'Understanding Abortion' website using HTML,
+                        CSS, and JavaScript, highlighting the importance of activism and social impact. Incorporated
+                        multimedia content and interactive features to enhance user experience, including a dark mode
+                        toggle and a petition signing form.
+                    </p>
+                </div>
+                <div>
+                    <span class="project-card_skill">
+                        HTML
+                    </span>
+                    <span class="project-card_skill">
+                        CSS
                     </span>
                 </div>
             </div>
         </div>
     </section>
-
-    <footer class="footer" id="footer">
-        <ul class="footer-list">
-            <li class="footer-list__item">
-                <a href="https://www.linkedin.com/in/nuva">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-            </li>
-            <li class="footer-list__item">
-                <a href="https://www.github.com/nuvashrestha">
-                    <i class="bi bi-github"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-
 </body>
-
+<footer class="footer" id="footer">
+    <ul class="footer-list">
+        <li class="footer-list__item">
+            <a href="https://www.linkedin.com/in/nuva" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </li>
+        <li class="footer-list__item">
+            <a href="https://www.github.com/nuvashrestha" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+        </li>
+    </ul>
+    <p class="footer-text">© 2025 Nuva Shrestha. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </html>

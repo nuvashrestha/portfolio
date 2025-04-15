@@ -16,13 +16,13 @@
     --font-mono: "Ubuntu Mono";
 }
 
-* {
-    margin: 0;
-    padding: 0;
+.dark-mode p{
+    color: #ffffff !important;
 }
-
-
-
+.dark-mode{
+    background-color: #747474;
+    color: #ffffff !important;
+}
 a {
     text-decoration: none;
 }
@@ -33,7 +33,10 @@ ul {
 
 body {
     font-family: 'Gotham Black', sans-serif;;
-    background-color: #DDD0C8;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+
 }
 
 .logo {
@@ -41,6 +44,7 @@ body {
     font-weight: 700;
     color: #de5499;
     font-size: 20px;
+    margin-top: 15px;
 }
 
 .header-list {
@@ -63,15 +67,29 @@ body {
     color: #323232;
 }
 
+#darkModeToggle{
+    border-style: none;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0px 20px;
+    background-color: #dda6cf;
+    right: 0px;
+    left: 0px;
+    top: 0px;
 }
+
 /*hello my name is*/
 .header-intro {
     color: #323232;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
     font-family: 'Gotham Black', sans-serif;;
     margin-bottom: 10px;
@@ -82,18 +100,16 @@ body {
     font-size: 95px;
     text-align: left;
     font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px
 }
 
 .header-button {
-    /* Display block - DON'T BE IN-LINE WITH ANYONE */
     display: block;
-    /* CENTER THE TEXT WITHIN THE ITEM */
     text-align: center;
     width: 150px;
-    /* INTERNAL PUSH (TOP & BOTTOM)*/
     padding-top: 10px;
     padding-bottom: 10px;
-    /* CURVES OUR EDGES */
     border-radius: 3px;
     color: #323232;
     border: 3px solid #de5499;
@@ -112,6 +128,7 @@ body {
     justify-content: center;
     height: 90vh;
     padding: 50px;
+    margin-bottom: 60px;
 
 }
 
@@ -132,11 +149,13 @@ body {
 .about {
     display: flex;
     justify-content: space-between;
+    padding-top: 0px;
 }
 
 .about-image img {
     width: 400px;
-    height: 450px;
+    height: auto;
+    padding-top: 110px;
 }
 
 .about-content {
@@ -181,36 +200,37 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5%;
     margin-top: 30px;
+    margin-top: 30px;
+    justify-content: space-evenly;
 }
 
-.work-card {
-    width: 26%;
+.project-card {
+    width: 35%;
     display: block;
     margin: 30px;
     transition: .3s;
     border-radius: 5px;
-    padding-bottom: 10px;
+    padding: 15px;
     cursor: pointer;
 }
 
-.work-link {
+.project-link {
     display: flex;
     justify-content: space-between;
 }
 
-.work-link a {
+.project-link a {
     color: #de5499;
     font-size: 20px;
 }
 
-.work-card_title {
+.project-card_title {
     color: #de5499;
     font-size: 30px;
 }
 
-.work-card_text {
+.project-card_text {
     color: #323232;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -218,24 +238,27 @@ body {
     font-size: 20px;
 }
 
-.work-card_skill {
+.project-card_skill {
     color: #323232;
     border: 1px solid #de5499;
     border-radius: 3px;
     padding: 5px;
     font-family: 'Gotham Black', sans-serif;
+    background-color: #de5499b9;
+    margin-right: 5px;
 }
 
-.work-card:hover {
-    background: #e7ddd8  ;
+.project-card:hover {
+    background: #dda6cf;
     opacity: 1;
 }
 
 .footer {
-    height: 3vh;
     background-color: #323232;
-    display: flex;
     justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
     align-items: center;
 }
 
@@ -247,5 +270,10 @@ body {
 }
 
 .footer-list__item a {
-    color: #DDD0C8;
+    color: white;
+}
+
+.footer-text{
+    color: #de5499;
+    font-weight: bold;
 }
